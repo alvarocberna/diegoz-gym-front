@@ -15,10 +15,11 @@ Use the guidance below to make focused, repository-aware changes.
 - Linting: `npm run lint` (runs `eslint`).
 
 3. Project conventions & patterns
-- TypeScript-first: keep `.tsx`/`.ts` files typed and export default components from route files.
+- TypeScript-first: keep `.tsx`/`.ts` files typed and export components from route files.
 - App Router: add routes as folders/files under `app/`. Example: `app/dashboard/page.tsx` → `/dashboard`.
 - Styling: global Tailwind config is present (Tailwind + PostCSS). Prefer utility classes in components and keep global rules in `app/globals.css`.
 - Fonts: the project uses `next/font` for optimization — prefer declared font usage in `app/layout.tsx`.
+- The project follows the features-pattern, dividing the project into the app, feature, and shared folders.
 
 4. Key files to inspect before making changes
 - `app/layout.tsx` — global layout and metadata.
