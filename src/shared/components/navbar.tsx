@@ -11,7 +11,7 @@ export function Navbar() {
     };
 
     return (
-        <nav className="bg-slate-800 text-white shadow-lg">
+        <nav className="w-full text-white shadow-lg absolute top-0 left-0" style={{zIndex: 2}}>
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -30,19 +30,13 @@ export function Navbar() {
                             href="/"
                             className="hover:text-blue-400 transition duration-300"
                         >
-                            Horarios
+                            Equipamiento
                         </Link>
                         <Link
                             href="/"
                             className="hover:text-blue-400 transition duration-300"
                         >
-                            Ubicación
-                        </Link>
-                        <Link
-                            href="/"
-                            className="hover:text-blue-400 transition duration-300"
-                        >
-                            Novedades
+                            Espacios
                         </Link>
                     </div>
 
