@@ -27,13 +27,13 @@ export function Navbar() {
                     {/* Desktop Navigation */}
                     <div className="w-[50%] hidden justify-evenly md:flex space-x-8">
                         <Link
-                            href="/"
+                            href="/#equipamiento"
                             className="hover:text-blue-400 transition duration-300"
                         >
                             Equipamiento
                         </Link>
                         <Link
-                            href="/"
+                            href="/#espacios"
                             className="hover:text-blue-400 transition duration-300"
                         >
                             Espacios
@@ -69,25 +69,18 @@ export function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-slate-800 px-2 pt-2 pb-3 space-y-1">
                     <Link
-                        href="/"
+                        href="/#equipamiento"
                         className="block px-3 py-2 rounded-md hover:bg-slate-700 transition"
                         onClick={() => setIsOpen(false)}
                     >
-                        Horarios
+                        Equipamiento
                     </Link>
                     <Link
-                        href="/"
+                        href="/#espacios"
                         className="block px-3 py-2 rounded-md hover:bg-slate-700 transition"
                         onClick={() => setIsOpen(false)}
                     >
-                        Ubicación
-                    </Link>
-                    <Link
-                        href="/"
-                        className="block px-3 py-2 rounded-md hover:bg-slate-700 transition"
-                        onClick={() => setIsOpen(false)}
-                    >
-                        Novedades
+                        Espacios
                     </Link>
                 </div>
             )}

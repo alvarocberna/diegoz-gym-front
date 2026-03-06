@@ -27,22 +27,21 @@ export function SecGym(){
 ];
 
     return(
-        <div className="w-full h-full flex mb-30">
-            <div className="w-1/2 h-[600] flex">
+        <div className="w-full h-full flex flex-col-reverse md:flex-row mb-30 " id="equipamiento">
+            <div className="w-full md:w-1/2 h-[600] flex ">
                 <div className="relative w-[90%] h-[90%] m-auto">
                     <Carrusel slides={slides} />
-                    {/* <Image className="absolute rounded-xl" src='/media/img_gym1.png' alt="gym" fill/> */}
                 </div>
             </div>
-            <div className="w-1/2 h-[600] flex">
-                <p className="text-6xl w-[90%] m-auto" style={{
+            <div className="w-full md:w-1/2 h-[600] flex ">
+                <p className="text-4xl md:text-6xl w-[90%] m-auto" style={{
                     fontFamily: 'sans-serif',
                     fontWeight: 600,
                     textTransform: 'uppercase',
                     letterSpacing: '3px',
 
                 }}>
-                    Sala de pesas con equipo de último nivel
+                    Sala de pesas con amplia variedad de máquinas
                 </p>
             </div>
         </div>

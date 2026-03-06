@@ -45,25 +45,25 @@ export function Portada() {
             >
                 {/* {slides.map((slide, index) => ( */}
                     <div className="relative h-screen w-full shrink-0">
-                        <Image src='/media/img_portada1.png' alt='alt' fill className="object-cover" priority />
+                        <Image src='/media/img_goku_portada.png' alt='alt' fill className="object-cover" priority />
                         <div className="absolute inset-0 bg-black/70"/>
                         <div className="absolute left-0 top-0 w-full h-full md:w-1/2 flex">
-                            <h2 className="text-white text-6xl ms-[10%] my-auto w-[90%]"
+                            <h2 className="text-white text-2xl sm:text-4xl md:text-6xl mx-auto md:ms-[10%] my-auto w-[90%]"
                             style={{
                                 fontFamily: 'sans-serif',
                                 fontWeight: 800,
                                 textTransform: 'uppercase',
                                 letterSpacing: '3px',
                             }}>
-                                Centro de entrenamiento saijajin
+                                Centro de entrenamiento Diegoz Gym
                             </h2>
                         </div>
                     </div>
                     <div className="relative h-screen w-full shrink-0">
-                        <Image src='/media/img_portada2.png' alt='alt' fill className="object-cover" />
+                        <Image src='/media/img_broly_portada.png' alt='alt' fill className="object-cover" />
                         <div className="absolute inset-0 bg-black/70" />
-                        <div className="absolute right-0 top-0 w-full h-full md:w-1/2 flex">
-                            <h2 className="text-white text-6xl me-[10%] my-auto w-[90%]"
+                        <div className="absolute right-0 top-0 w-full h-full md:w-[40%] flex">
+                            <h2 className="text-white text-2xl sm:text-4xl md:text-6xl mx-auto md:me-[10%] my-auto w-[90%]"
                             style={{
                                 fontFamily: 'sans-serif',
                                 fontWeight: 800,

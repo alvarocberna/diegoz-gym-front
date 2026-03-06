@@ -23,9 +23,9 @@ export function SecEspacios(){
 ];
 
     return(
-        <div className="w-full h-full flex mb-30">
-            <div className="w-1/2 h-[600] flex">
-                <p className="text-6xl w-[90%] m-auto" style={{
+        <div className="w-full h-full flex flex-col md:flex-row mb-30" id="espacios">
+            <div className="w-full md:w-1/2 h-[600] flex ">
+                <p className="text-4xl md:text-6xl w-[90%] m-auto" style={{
                     fontFamily: 'sans-serif',
                     fontWeight: 600,
                     textTransform: 'uppercase',
@@ -35,7 +35,7 @@ export function SecEspacios(){
                     Diviersidad de espacio para múltiples disciplinas como boxeo, funcional y levantamiento de pesas
                 </p>
             </div>
-            <div className="w-1/2 h-[600] flex">
+            <div className="w-full md:w-1/2 h-[600] flex ">
                 <div className="relative w-[90%] h-[90%] m-auto">
                     <Carrusel slides={slides} />
                 </div>
