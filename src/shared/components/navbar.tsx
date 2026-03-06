@@ -11,7 +11,7 @@ export function Navbar() {
     };
 
     return (
-        <nav className="bg-slate-800 text-white shadow-lg">
+        <nav className="w-full text-white shadow-lg absolute top-0 left-0" style={{zIndex: 2}}>
             <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -27,22 +27,16 @@ export function Navbar() {
                     {/* Desktop Navigation */}
                     <div className="w-[50%] hidden justify-evenly md:flex space-x-8">
                         <Link
-                            href="/"
+                            href="/#equipamiento"
                             className="hover:text-blue-400 transition duration-300"
                         >
-                            Horarios
+                            Equipamiento
                         </Link>
                         <Link
-                            href="/"
+                            href="/#espacios"
                             className="hover:text-blue-400 transition duration-300"
                         >
-                            Ubicación
-                        </Link>
-                        <Link
-                            href="/"
-                            className="hover:text-blue-400 transition duration-300"
-                        >
-                            Novedades
+                            Espacios
                         </Link>
                     </div>
 
@@ -75,25 +69,18 @@ export function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-slate-800 px-2 pt-2 pb-3 space-y-1">
                     <Link
-                        href="/"
+                        href="/#equipamiento"
                         className="block px-3 py-2 rounded-md hover:bg-slate-700 transition"
                         onClick={() => setIsOpen(false)}
                     >
-                        Horarios
+                        Equipamiento
                     </Link>
                     <Link
-                        href="/"
+                        href="/#espacios"
                         className="block px-3 py-2 rounded-md hover:bg-slate-700 transition"
                         onClick={() => setIsOpen(false)}
                     >
-                        Ubicación
-                    </Link>
-                    <Link
-                        href="/"
-                        className="block px-3 py-2 rounded-md hover:bg-slate-700 transition"
-                        onClick={() => setIsOpen(false)}
-                    >
-                        Novedades
+                        Espacios
                     </Link>
                 </div>
             )}

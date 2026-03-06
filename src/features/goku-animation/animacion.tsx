@@ -4,9 +4,9 @@ import { KiAura } from "./aura"
 export function Animacion(){
     return(
         <div className="flex w-full h-full">
-                <div className="w-[90%] h-full mx-auto relative">
+                <div className="w-[90%] h-full mx-auto relative flex">
                     <KiAura />
-                    <div className="relative w-full h-full">
+                    <div className="relative w-[90%] h-[90%] mx-auto my-auto">
                         <Image
                             src="/goku2.png"
                             alt="Goku"
